@@ -1,0 +1,19 @@
+[package]
+name = "ecoast"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+indicatif = { version = "0.17.8", features = ["rayon"] }
+linfa = "0.7.0"
+linfa-hierarchical = "0.7.0"
+linfa-kernel = "0.7.0"
+polars = { version = "0.40.0", features = ["lazy", "log", "ndarray"] }
+rayon = "1.10.0"
+noodles = { version = "0.77.0", features = ["core", "gff"] }
+rust-htslib = "0.38.2"
+rust-lapper = "1.1.0"
+clap = { version = "4.5.7", features = ["derive"] }
